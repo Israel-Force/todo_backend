@@ -15,5 +15,5 @@ signin(app)
 register(app)
 
 //listen to port
-app.listen(3001)
-console.log('we are now online on port 3001')
+app.listen(process.env.PORT || 3001)
+console.log(`we are now online on port ${process.env.PORT}`)
